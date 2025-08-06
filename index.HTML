@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sujal Kalauni | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="brand">Sujal Kalauni</span>
+    <ul>
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#projects" class="nav-item">Projects</a></li>
+      <li><a href="#skills" class="nav-item">Skills</a></li>
+      <li><a href="#contact" id="contactBtn" class="nav-item">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Sujal Kalauni</h1>
+    <h2>B.Tech Student | Web & Software Enthusiast</h2>
+    <p>Welcome to my neon black themed portfolio. Explore my work, skills, and get in touch!</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p><strong>Sujal Kalauni</strong></p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-list">
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p>A web app to track, analyze, and manage students' academic records built with React and Node.js.</p>
+          <a href="https://example.com/student-management" target="_blank">See Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>Real-time weather data aggregator using external APIs, live visualization & dynamic theming.</p>
+          <a href="https://example.com/weather-dashboard" target="_blank">See Project</a>
+        </div>
+        <div class="project-card">
+      
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill-block">
+          <span>Java</span>
+          <button class="show-code" data-lang="java"></button>
+          <pre class="code-block" id="java-code"></pre>
+        </div>
+        <div class="skill-block">
+          <span>Python</span>
+          <button class="show-code" data-lang="python"></button>
+          <pre class="code-block" id="python-code"></pre>
+        </div>
+        <div class="skill-block">
+          <span>JavaScript</span>
+          <button class="show-code" data-lang="js"></button>
+          <pre class="code-block" id="js-code"></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div class="modal-bg" id="modalBg">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2>Contact Me</h2>
+      <form id="contactForm" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send</button>
+      </form>
+      <div style="margin:1rem 0 0 0; font-size:1.05em;">
+        <strong>Email:</strong> <span class="neon-email">sujal1kalauni@gmail.com</span><br>
+        <strong>Phone:</strong>
+        <button id="showNumberBtn" class="neon-phone">Show Number</button>
+        <span id="hiddenNumber" style="display:none; font-weight:600;">8273983822</span>
+      </div>
+      <div id="formResponse" style="display:none; color:#39ff14; font-weight:bold; margin-top:1em;">Thank you for your message!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
