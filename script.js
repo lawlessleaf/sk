@@ -9,6 +9,9 @@ document.querySelectorAll('.nav-item').forEach(link => {
   });
 });
 
+
+
+
 // Modal functionality
 const contactBtn = document.getElementById('contactBtn');
 const modalBg = document.getElementById('modalBg');
@@ -80,4 +83,5 @@ document.querySelectorAll('.show-code').forEach(btn => {
       btn.innerText = 👁 Hide Code;
     }
   });
+
 });
