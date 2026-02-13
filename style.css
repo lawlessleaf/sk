@@ -17,6 +17,10 @@ body {
   letter-spacing: 0.03em;
   scroll-behavior: smooth;
 }
+
+
+
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -269,4 +273,5 @@ section h2 {
   nav { padding: 1em 1.1em; }
   section { padding: 1.2em 0.6em; }
   .skills-list { flex-direction: column; gap: 0.8em; }
+
 }
